@@ -1,6 +1,6 @@
 import { Product } from './Product';
 import { Order } from './Order';
-import { SupplyChainSystem } from './Restaurant_System';
+import { SupplyChainSystem } from './SupplyChainSystem';
 
 const system = new SupplyChainSystem();
 
