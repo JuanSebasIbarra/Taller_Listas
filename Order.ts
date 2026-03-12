@@ -1,20 +1,20 @@
-class order {
+import { Product } from './Product';
 
-    public state: string
-    public products: product[];
+export class Order {
+    public products: Product[] = [];
+    public isApproved: boolean = false;
+    public isPaid: boolean = false;
 
-    constructor(state: string, products: product[]) {
-        this.state = state;
-        this.products = [];
+    constructor(
+        public id: number,
+        public state: string = "Prepare Requisition" // Estado inicial según el diagrama
+    ) {}
+
+    addProduct(product: Product): void {
+        this.products.push(product);
     }
 
     calculateTotal(): number {
-        let total = 0;
-        for (let product of this.products) {
-            total += product.price;
-        }
-        return total;
+        return this.products.reduce((total, p) => total + p.price, 0);
     }
 }
-
-

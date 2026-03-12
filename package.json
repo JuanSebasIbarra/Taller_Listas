@@ -1,0 +1,20 @@
+{
+  "name": "taller-listas",
+  "version": "1.0.0",
+  "description": "Taller de estructuras de datos y POO - UCC",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanSebasIbarra/Taller_Listas.git"
+  },
+  "author": "Sebastian",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
